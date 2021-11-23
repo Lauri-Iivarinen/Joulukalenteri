@@ -1,11 +1,11 @@
 var taulu = "";
 for (i=1; i<=24; i++){
-    taulu += "<td><div class = 'tableInside' id='day"+i+"'><button class ='taulukko' onclick='funktio("+i+");'>"+i+"</div></button></td>"
+    taulu += "<td><div class = 'tableInside' id='day"+i+"'><button class ='taulukko' onclick='funktio"+i+"("+i+");'>"+i+"</div></button></td>"
 }
 
 document.getElementById("tableBase").innerHTML = taulu;
 //joka päivälle pitää tehdä funktio, testausta varten olemassa vain geneerinen "funktio"
-function funktio(day){
+function funktio1(day){
     if(checkDay(day)){
         console.log("DAY 1")
         document.getElementById("day1").innerHTML = "<img src = 'kuvat/kuva1.png' height=150px width =150px'>"
