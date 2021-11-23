@@ -61,3 +61,7 @@ setTimeout(function(){
 setTimeout(function(){
     document.getElementById("start").innerHTML = "<h1>OPENING /DOCUMENTS/TOP _SECRET/XMAS...</h1>"
 },14000)
+setTimeout(function(){
+    window.location.href = "kalenteri/kalenteri.html"
+},14700)
+
