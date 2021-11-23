@@ -15,7 +15,15 @@ function funktio(day){
     
 }
 
-//moi voitto
+function funktio2(day){
+    if(checkDay(day)){
+        console.log("DAY 2");
+     }
+    else{
+        console.log("wrong day 2");
+    }
+
+}
 
 
 //palauttaa true jos klikattu luukku vastaa kyseistä päivämäärää
