@@ -8,7 +8,7 @@ document.getElementById("tableBase").innerHTML = taulu;
 function funktio(day){
     if(checkDay(day)){
         console.log("DAY 1")
-        document.getElementById("day1").innerHTML = "<img src = 'kuva1.png' height=150px width =150px'>"
+        document.getElementById("day1").innerHTML = "<img src = 'kuvat/kuva1.png' height=150px width =150px'>"
     }else{
         console.log("wrong day");
     }
