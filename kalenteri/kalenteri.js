@@ -15,6 +15,8 @@ function funktio(day){
     
 }
 
+//moi voitto
+
 
 //palauttaa true jos klikattu luukku vastaa kyseistä päivämäärää
 function checkDay(day) {
