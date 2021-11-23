@@ -13,3 +13,20 @@ button{
     padding-top: 15%;
     text-align: center;
 }
+
+.load{
+
+    float: left;
+}
+#bar{
+    width: 20%;
+    font-size: larger;
+}
+#barStart{
+    width: 40%;
+    text-align: end;
+}
+#barEnd{
+    width: 40%;
+    text-align: start;
+}
