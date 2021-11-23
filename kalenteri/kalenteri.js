@@ -1,17 +1,14 @@
 var taulu = "";
 for (i=1; i<=24; i++){
-    if ((i-1) %6  == 0){
-        taulu += "<br>"
-    }
-    taulu += "<td><button class ='taulukko' id='day"+i+"' onclick='funktio("+i+");'>"+i+"</button></td>"
+    taulu += "<td><div class = 'tableInside' id='day"+i+"'><button class ='taulukko' onclick='funktio("+i+");'>"+i+"</div></button></td>"
 }
 
-document.getElementById("table").innerHTML = taulu;
-
+document.getElementById("tableBase").innerHTML = taulu;
+//joka päivälle pitää tehdä funktio, testausta varten olemassa vain geneerinen "funktio"
 function funktio(day){
     if(checkDay(day)){
         console.log("DAY 1")
-        document.getElementById("day1").style.backgroundColor = "black";
+        document.getElementById("day1").innerHTML = "<img src = 'kuva1.png' height=150px width =150px'>"
     }else{
         console.log("wrong day");
     }
