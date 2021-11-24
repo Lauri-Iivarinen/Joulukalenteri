@@ -13,6 +13,7 @@ function funktio1(day){
         console.log("wrong day");
         //varmuuskopio
     }
+
     
 }
 
@@ -34,9 +35,11 @@ function checkDay(day) {
     var month = date.getMonth();
     //month pitää vaihtaa joulukuussa "11"
     if (paivamaara >= day && month == 10){
+        console.log("correct");
         return true;
     }
     /*Seuraava return true pitää poistaa valmiista ohjelmasta,
     se on olemassa vain testausta varten*/
+    console.log("wrong");
     return true;
 }
