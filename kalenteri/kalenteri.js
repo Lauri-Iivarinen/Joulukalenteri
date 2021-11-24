@@ -1,6 +1,9 @@
 var taulu = "";
-for (i=1; i<=24; i++){
-    taulu += "<td><div class = 'tableInside' id='day"+i+"'><button class ='taulukko' onclick='funktio"+i+"("+i+");'>"+i+"</div></button></td>"
+var randomPaiva = [3,15,5,11,23,16,20,12,4,17,21,10,13,7,8,1,9,24,2,14,6,19,22,18];
+
+console.log(randomPaiva.length)
+for (i=0; i<24; i++){
+    taulu += "<td><div class = 'tableInside' id='day"+randomPaiva[i]+"'><button class ='taulukko' onclick='funktio"+randomPaiva[i]+"("+randomPaiva[i]+");'>"+randomPaiva[i]+"</div></button></td>"
 }
 
 document.getElementById("tableBase").innerHTML = taulu;
