@@ -1,6 +1,9 @@
 var text = "*"
 var barText = ""
 
+var mikko = ""
+//haloo
+
 
 var timer = 600;
 var i = 0;
