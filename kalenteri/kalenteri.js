@@ -11,6 +11,7 @@ function funktio1(day){
         document.getElementById("day1").innerHTML = "<img src = 'kuvat/kuva1.png' height=150px width =150px'>"
     }else{
         console.log("wrong day");
+        //varmuuskopio
     }
     
 }
