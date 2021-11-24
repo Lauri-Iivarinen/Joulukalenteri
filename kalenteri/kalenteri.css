@@ -9,10 +9,12 @@ button{
 }
 
 #tableBase{
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 21%;
+    padding-right: 15%;
 }
 
 .tableInside{
+    width: 15%;
     float: left;
+    padding-bottom: 1%;
 }
