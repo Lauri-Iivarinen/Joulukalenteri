@@ -6,12 +6,7 @@ for (i=1; i<=24; i++){
 document.getElementById("tableBase").innerHTML = taulu;
 //joka päivälle pitää tehdä funktio, testausta varten olemassa vain geneerinen "funktio"
 function funktio1(day){
-    if(checkDay(day)){
-        console.log("DAY 1")
-        document.getElementById("day1").innerHTML = "<img src = 'kuvat/kuva1.png' height=150px width =150px'>"
-    }else{
-        console.log("wrong day");
-    }
+    checkDay(day)
     
 }
 
@@ -33,9 +28,11 @@ function checkDay(day) {
     var month = date.getMonth();
     //month pitää vaihtaa joulukuussa "11"
     if (paivamaara >= day && month == 10){
+        console.log("correct");
         return true;
     }
     /*Seuraava return true pitää poistaa valmiista ohjelmasta,
     se on olemassa vain testausta varten*/
+    console.log("wrong");
     return true;
 }
