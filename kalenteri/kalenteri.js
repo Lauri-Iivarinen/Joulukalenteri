@@ -23,6 +23,7 @@ function funktio1(day){
 function funktio2(day){
     if(checkDay(day)){
         console.log("DAY 2");
+        document.getElementById("day"+day).innerHTML = "<img src = 'kuvat/kuva"+day+".png' height=150px width=150px'>"
      }
     else{
         console.log("wrong day 2");
