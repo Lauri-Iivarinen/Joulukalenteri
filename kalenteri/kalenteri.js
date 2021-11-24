@@ -18,7 +18,13 @@ function funktio1(day){
 }
 
 function funktio2(day){
-   checkDay(day)
+    if(checkDay(day)){
+        console.log("DAY 2");
+     }
+    else{
+        console.log("wrong day 2");
+    }
+
 }
 
 
