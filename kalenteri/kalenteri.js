@@ -57,6 +57,6 @@ function checkDay(day) {
     }
     /*Seuraava return true pitää poistaa valmiista ohjelmasta,
     se on olemassa vain testausta varten*/
-    console.log("wrong");
     //return true;
+    console.log("wrong");
 }
