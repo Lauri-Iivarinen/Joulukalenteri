@@ -9,12 +9,12 @@ console.log(randomPaiva.length);
 function openOld(){
     //local.clear OTETTAVA pois ennen julkaisua
     //localStorage.clear();
-    /*KOMMENTOITU POIS TESTAUSTA VARTEN, OTETTAVA KÄYTTÖÖN VALMIISSA TUOTTEESSA*/
+    /*KOMMENTOITU POIS TESTAUSTA VARTEN, OTETTAVA KÄYTTÖÖN VALMIISSA TUOTTEESSA
     for(var i=1; i<=paivamaara;i++){
         if(localStorage.getItem(i)==i){
             funktio(i);
         }
-    }
+    }*/
 }
 for (i=0; i<24; i++){
     taulu += "<td><div class = 'tableInside' id='day"+randomPaiva[i]+"'><div class='imageContainer' id='imageContainerId"+randomPaiva[i]+"'><button class ='taulukko'id='door"+randomPaiva[i]+"' onclick='funktio("+randomPaiva[i]+");'>"+randomPaiva[i]+"</div></button></div></td>"
@@ -31,6 +31,9 @@ function doorAnimation(day){
         element.classList.toggle("doorOpen");   //triggeröi ovenavaus animaation
     var imageElement = document.getElementById(`imageContainerId${day}`);   //määrittää luukun johon kuva tulee
         imageElement.style.backgroundImage = `url(../kalenteri/kuvat/kuva${day}.png)`;   //luo kuvan takaoveen
+        setInterval(function(){
+            document.getElementById("door"+day).remove();
+        },1000)
     }
 
 
@@ -57,6 +60,6 @@ function checkDay(day) {
     }
     /*Seuraava return true pitää poistaa valmiista ohjelmasta,
     se on olemassa vain testausta varten*/
-    //return true;
+    return true;
     console.log("wrong");
 }
