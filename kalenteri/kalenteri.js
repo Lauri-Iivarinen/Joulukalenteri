@@ -8,13 +8,13 @@ console.log(randomPaiva.length);
 //avaa aiemmin samalla selaimella avatut taulut
 function openOld(){
     //local.clear OTETTAVA pois ennen julkaisua
-    localStorage.clear();
-    /*KOMMENTOITU POIS TESTAUSTA VARTEN, OTETTAVA KÄYTTÖÖN VALMIISSA TUOTTEESSA
+    //localStorage.clear();
+    /*KOMMENTOITU POIS TESTAUSTA VARTEN, OTETTAVA KÄYTTÖÖN VALMIISSA TUOTTEESSA*/
     for(var i=1; i<=paivamaara;i++){
         if(localStorage.getItem(i)==i){
             funktio(i);
         }
-    }*/
+    }
 }
 for (i=0; i<24; i++){
     taulu += "<td><div class = 'tableInside' id='day"+randomPaiva[i]+"'><div class='imageContainer' id='imageContainerId"+randomPaiva[i]+"'><button class ='taulukko'id='door"+randomPaiva[i]+"' onclick='funktio("+randomPaiva[i]+");'>"+randomPaiva[i]+"</div></button></div></td>"
@@ -51,12 +51,12 @@ function funktio(day){
 function checkDay(day) {
     
     //month pitää vaihtaa joulukuussa "11"
-    if (paivamaara >= day && month == 10){
+    if (paivamaara >= day && month == 11){
         console.log("correct");
         return true;
     }
     /*Seuraava return true pitää poistaa valmiista ohjelmasta,
     se on olemassa vain testausta varten*/
     console.log("wrong");
-    return true;
+    //return true;
 }
