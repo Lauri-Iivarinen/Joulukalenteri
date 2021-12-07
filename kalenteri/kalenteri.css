@@ -14,16 +14,18 @@ h1{
 .taulukko
 {
     font-size: 50px;
-    text-align:right;
     width: 150px;
     height: 150px;
-    padding-top: 90px;
+    margin: auto;                    /*tekstin sijainti*/
+    text-align: center;                  /*tekstin sijainti*/
     background-color: brown;        
     transform-origin: left;             /*Ovenavaus animaation aloituspuoli*/
     -webkit-transition: all 1s ease-in-out;    /*chrome*/
     -moz-transition: all 1s ease-in-out;       /*firefox*/
     -o-transition: all 1s ease-in-out;         /*opera*/
     transition: all 1s ease-in-out;     /*ovenavaus animaation nopeus*/
+    border: solid 2px gray;
+
 }
 
 /*elementti johon kuva tulee*/
@@ -31,7 +33,7 @@ h1{
 {
 /*Takaoven koko*/
     width: 150px;
-    height: 150px; 
+    height: 150px;
 /*placeholder väri jos kuvaa ei ole*/
     background-color: violet;
 /*coverilla kuva on koko takaoven kokoinen*/
@@ -44,8 +46,9 @@ h1{
 }
   
 #tableBase{
-    padding-left: 21%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: auto;
+    margin: 2px;
 }
 
 .tableInside{
