@@ -47,6 +47,9 @@ h1{
 /*coverilla kuva on koko takaoven kokoinen*/
     background-size: cover;
 }
+.imageContainer:hover{
+    transform: scale(2);
+}
 .doorOpen
 {
   /*oven avaus animaatio perspektiivi, rotatY on kuinka pitkälle luukku aukeaa*/
