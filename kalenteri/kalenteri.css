@@ -3,17 +3,21 @@ body{
     background-size: cover;
     padding:0px;
     margin: 0px;
+    font-family: 'Gwendolyn', cursive;
 }
 
 h1{
     text-align: center;
     font-size: 100px;
     color:red;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 .taulukko
 {
     font-size: 50px;
+    font-family: 'Gwendolyn', cursive;
     width: 150px;
     height: 150px;
     margin: auto;                    /*tekstin sijainti*/
