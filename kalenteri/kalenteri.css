@@ -18,13 +18,16 @@ h1{
     height: 150px;
     margin: auto;                    /*tekstin sijainti*/
     text-align: center;                  /*tekstin sijainti*/
-    background-color: brown;        
+    background-image: url('kuvat/package.png');
+    background-size: 100%;        
     transform-origin: left;             /*Ovenavaus animaation aloituspuoli*/
     -webkit-transition: all 1s ease-in-out;    /*chrome*/
     -moz-transition: all 1s ease-in-out;       /*firefox*/
     -o-transition: all 1s ease-in-out;         /*opera*/
     transition: all 1s ease-in-out;     /*ovenavaus animaation nopeus*/
     border: solid 2px gray;
+    color: white;
+    font-size: 75px;
 
 }
 
