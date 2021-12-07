@@ -1,13 +1,45 @@
+body{
+    padding:0px;
+    margin: 0px;
+}
 h1{
     text-align: center;
+    font-size: 100px;
+    color:red;
 }
 
-button{
+.taulukko
+{
+    font-size: 50px;
+    text-align:right;
     width: 150px;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    height: 150px;
+    padding-top: 90px;
+    background-color: brown;        
+    transform-origin: left;             /*Ovenavaus animaation aloituspuoli*/
+    -webkit-transition: all 1s ease-in-out;    /*chrome*/
+    -moz-transition: all 1s ease-in-out;       /*firefox*/
+    -o-transition: all 1s ease-in-out;         /*opera*/
+    transition: all 1s ease-in-out;     /*ovenavaus animaation nopeus*/
 }
 
+/*elementti johon kuva tulee*/
+.imageContainer
+{
+/*Takaoven koko*/
+    width: 150px;
+    height: 150px; 
+/*placeholder väri jos kuvaa ei ole*/
+    background-color: violet;
+/*coverilla kuva on koko takaoven kokoinen*/
+    background-size: cover;
+}
+.doorOpen
+{
+  /*oven avaus animaatio perspektiivi, rotatY on kuinka pitkälle luukku aukeaa*/
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-95deg);
+}
+  
 #tableBase{
     padding-left: 21%;
     padding-right: 15%;
@@ -17,4 +49,6 @@ button{
     width: 15%;
     float: left;
     padding-bottom: 1%;
+    
 }
+
