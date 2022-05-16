@@ -2,6 +2,8 @@
 
 Xmas calendar created in orientation to software developing course.
 
+
+/*
 todo:
 -sovi ominaisuudet
 -suunnittele ulkonäkö
@@ -21,3 +23,4 @@ luukun animaatio
 LAURI
 Local storage yms
 8 kuvaa
+*/
