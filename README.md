@@ -1,5 +1,7 @@
 # Joulukalenteri
 
+Xmas calendar created in orientation to software developing course.
+
 todo:
 -sovi ominaisuudet
 -suunnittele ulkonäkö
